@@ -1,24 +1,21 @@
-(function () {
+// (function () {
+// 	'use strict';
 
-	var myapp = angular.module("DIApp", []);
+// 	var myapp = angular.module("DIApp", []);
 
-	myapp.controller("DIController", DIController);
+// 	myapp.controller("DIController", ['$scope', '$filter', DIController]);
 
-	function DIController ($scope, $filter, $injector) {
+// 	function DIController ($scope, $filter ) {
 
-		$scope.name = "Harry"
+// 		$scope.name = "Harry"
 
-		$scope.upper = function () {
-			var upCase = $filter('uppercase');
-			$scope.name = upCase($scope.name);
-		};
+// 		$scope.upper = function () {
+// 			var upCase = $filter('uppercase');
+// 			$scope.name = upCase($scope.name);
+// 		};
 
-	}
+// 	}
 
-	function AnnonateMe(name, job, blah) {
-		return "Blah";
-	}
+// })();
 
-	console.log(AnnonateMe.toString());
-
-})();
+!function(){"use strict";function r(r,e){r.name="Harry",r.upper=function(){var n=e("uppercase");r.name=n(r.name)}}var e=angular.module("DIApp",[]);e.controller("DIController",["$scope","$filter",r])}();
